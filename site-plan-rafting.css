@@ -1,179 +1,87 @@
+/* Add the @import statement for Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Adventure+Sans&family=Outdoor+Grotesk&display=swap');
 
-:root {
-    --primary-color: #156064; /* Dark Teal */
-    --secondary-color: #FFD700; /* Gold */
-    --accent1-color: #FF5733; /* Coral */
-    --accent2-color: #F0F8FF; /* Alice Blue */
-    --heading-font: 'Adventure Sans', sans-serif;
-    --paragraph-font: 'Outdoor Grotesk', Helvetica, sans-serif;
-    --headline-color-on-white: #156064;  
-    --headline-color-on-color: white; 
-    --paragraph-color-on-white: #156064;
-    --paragraph-color-on-color: white;
-    --paragraph-background-color: #156064;
-    --nav-link-color: #156064;
-    --nav-background-color: #FFD700;
-    --nav-hover-link-color: white;
-    --nav-hover-background-color: #156064;
-}
-
+/* Simple Reset */
 body {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 4em;
-    font-size: 18px;
-    text-align: center;
-}
-
-img {
-    display: block;
-    margin: 0 auto;
-    max-width: 300px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--headline-color-on-white);
+    background-color: #fcfbfb;
+    font-family: 'Outdoor Grotesk', Arial, sans-serif; /* Change the body font */
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
-    text-align: center;
+    margin: 0; /* Reset margin for h2 elements */
 }
 
-hr {
-    height: 3px;
-    margin: 35px 0;
-    background: var(--accent1-color);
+/* Adjusting font sizes */
+.home-title {
+    font-family: 'Adventure Sans', sans-serif; /* Change the headline font */
+    font-size: 2em;
 }
 
-header {
-    padding: 1em;
-    text-align: center;
-    color: var(--headline-color-on-color);
-    background-color: var(--paragraph-background-color);
+.book, .join {
+    font-size: 18px; /* Change font size for book and join links */
 }
 
-header > h1, header > h2 {
-    color: var(--headline-color-on-color);
+.msg p {
+    font-size: 0.8em; /* Change font size for paragraphs inside .msg */
 }
 
-p {
-    font-family: var(--paragraph-font);
-    color: var(--paragraph-color-on-white);
-    padding: 1em;
+.msg {
+    background-color: #6f7364;
+    line-height: 1.5em; /* Increase line height for better readability */
 }
 
-.colors {
-    width: 100%;
-    min-width: 350px;
-    margin: 30px auto;
-    text-align: center;
-}
-
-.colors th {
-    background-color: #999;
-}
-
-.colors td {
-    width: 25%;
-    height: 3em;
-}
-
-.primary {
-    background-color: var(--primary-color);
-}
-
-.secondary {
-    background-color: var(--secondary-color);
-}
-
-.accent1 {
-    background-color: var(--accent1-color);
-}
-
-.accent2 {
-    background-color: var(--accent2-color);
-}
-
-p.colored {
-    background-color: var(--paragraph-background-color);
-    color: var(--paragraph-color-on-color);
-}
-
-nav {
-    background-color: var(--nav-background-color);
-    line-height: 3em;
-    text-align: center;
-    font-size: 1.2em;
-}
-
-nav {
-    list-style-type: none;
-    display: flex;
+/* Adding Padding */
+#logo_link {
+    padding-top: 5px; /* Add padding to the logo link */
 }
 
 nav a {
-    padding: 1em;
-    min-width: 120px;
     text-decoration: none;
-}
-
-nav a:link, nav a:visited {
-    color: var(--nav-link-color);
-}
-
-nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
-}
-
-.sitemap {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(6, 15%);
-    grid-template-rows: 3em 1.5em 1.5em 3em;
-    grid-template-areas: ". . home home . ."
-                         ". . . top . ."
-                         ". left left right right ."
-                         "page2 page2 . . page3 page3";
-}
-
-.sitemap > div {
+    color: #fcfbfb;
     text-align: center;
+    padding: 35px; /* Add padding to navigation links */
 }
 
-.sm-home {
-    grid-area: home;
-    background-color: #ccc;
-    line-height: 3em;
+.book, .join {
+    padding: 15px 30px; /* Add padding to book and join buttons */
 }
 
-.sm-page2 {
-    grid-area: page2;
-    background-color: #ccc;
-    line-height: 3em;
+.icon {
+    padding-top: 10px; /* Add padding to icons */
 }
 
-.sm-page3 {
-    grid-area: page3;
-    background-color: #ccc;
-    line-height: 3em;
+.msg {
+    padding: 35px; /* Add padding to message section */
 }
 
-.top {
-    grid-area: top;
-    border-left: 1px solid;
+.msg p {
+    padding-bottom: 15px; /* Add padding to paragraphs inside .msg */
 }
 
-.left {
-    grid-area: left;
-    border-top: 1px solid;
-    border-left: 1px solid;
+footer {
+    padding: 25px 50px; /* Add padding to footer */
 }
 
-.right {
-    grid-area: right;
-    border-top: 1px solid;
-    border-right: 1px solid;
+footer .social img {
+    padding-top: 15px; /* Add padding to social media icons */
+}
+
+/* Adding Margins */
+.home-title {
+    margin-top: 10px; /* Add margin to home title */
+}
+
+.book, .join {
+    margin-top: 50px; /* Add margin to book and join buttons */
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0; /* Add margin to river, camping, and rapids sections */
+}
+
+footer {
+    margin-top: 200px; /* Add margin to footer */
 }
